@@ -1,6 +1,6 @@
 <template>
   <div
-    v-for="(key, value) in config.gitInfo"
+    v-for="(value, key) in config.public.gitInfo"
     :key="key"
   >
     {{ key }}: {{ value }}
@@ -9,4 +9,5 @@
 
 <script setup>
 const config = useRuntimeConfig();
+console.log(config);
 </script>

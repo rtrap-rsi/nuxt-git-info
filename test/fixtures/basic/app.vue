@@ -1,6 +1,6 @@
 <template>
   <div
-    v-for="(key, value) in config.gitInfo"
+    v-for="(value, key) in config.gitInfo"
     :key="key"
   >
     {{ key }}: {{ value }}
