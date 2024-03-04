@@ -1,6 +1,6 @@
 {
   "name": "nuxt-git-info",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Wrapper around git-repo-info to get git info in Nuxt",
   "repository": "rsi/nuxt-git-info",
   "license": "MIT",
