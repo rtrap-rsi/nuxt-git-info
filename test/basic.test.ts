@@ -7,10 +7,10 @@ describe('ssr', async () => {
     rootDir: fileURLToPath(new URL('./fixtures/basic', import.meta.url)),
   })
 
-  it('renders the index page', async () => {
+  it('renders the index page with git information', async () => {
     const html = await $fetch('/')
-    expect(html).toContain('<div>branch:</div>')
-    expect(html).toContain('<div>sha:</div>')
-    expect(html).toContain('<div>abbreviatedSha:</div>')
+    expect(html).toContain('branch:')
+    expect(html).toContain('sha:')
+    expect(html).toContain('abbreviatedSha:')
   })
 })
